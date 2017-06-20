@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hello World | 陋巷拾人</title>
+  <title>关闭局域网时间自动同步 | 陋巷拾人</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="公司局域网怎么关闭系统自动更新时间(停用ntpclient服务)123$ Ntpclient是时间服务提供程序。$ 解决: 停掉ntpclient服务HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpClient$ 把Enabled的值改成0 ,然后再net stop w32time &amp;amp">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://fifteentomay.github.io/notes/2017/06/19/hello-world/index.html">
+<meta property="og:title" content="关闭局域网时间自动同步">
+<meta property="og:url" content="https://fifteentomay.github.io/notes/2017/06/20/关闭局域网时间自动同步/index.html">
 <meta property="og:site_name" content="陋巷拾人">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta property="og:updated_time" content="2017-06-19T15:38:26.146Z">
+<meta property="og:description" content="公司局域网怎么关闭系统自动更新时间(停用ntpclient服务)123$ Ntpclient是时间服务提供程序。$ 解决: 停掉ntpclient服务HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpClient$ 把Enabled的值改成0 ,然后再net stop w32time &amp;amp">
+<meta property="og:updated_time" content="2017-06-20T14:07:23.608Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="关闭局域网时间自动同步">
+<meta name="twitter:description" content="公司局域网怎么关闭系统自动更新时间(停用ntpclient服务)123$ Ntpclient是时间服务提供程序。$ 解决: 停掉ntpclient服务HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpClient$ 把Enabled的值改成0 ,然后再net stop w32time &amp;amp">
   
     <link rel="alternate" href="/atom.xml" title="陋巷拾人" type="application/atom+xml">
   
@@ -63,10 +63,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-关闭局域网时间自动同步" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2017/06/19/hello-world/" class="article-date">
-  <time datetime="2017-06-19T15:38:26.146Z" itemprop="datePublished">2017-06-19</time>
+    <a href="/2017/06/20/关闭局域网时间自动同步/" class="article-date">
+  <time datetime="2017-06-20T02:58:40.000Z" itemprop="datePublished">2017-06-20</time>
 </a>
     
   </div>
@@ -77,7 +77,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      关闭局域网时间自动同步
     </h1>
   
 
@@ -85,20 +85,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <h3 id="公司局域网怎么关闭系统自动更新时间-停用ntpclient服务"><a href="#公司局域网怎么关闭系统自动更新时间-停用ntpclient服务" class="headerlink" title="公司局域网怎么关闭系统自动更新时间(停用ntpclient服务)"></a>公司局域网怎么关闭系统自动更新时间(停用ntpclient服务)</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ Ntpclient是时间服务提供程序。</div><div class="line">$ 解决: 停掉ntpclient服务HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpClient</div><div class="line">$ 把Enabled的值改成0 ,然后再net stop w32time &amp;&amp; net start w32time</div></pre></td></tr></table></figure>
+<p>More info: <a href="http://baike.baidu.com/link?url=-KLGel6HWHFOtzhvc3ifljbrYcVxU43RbKqPWp4z64DcqQ52aQ3eBL2ZlCNv3H-FEgzgwg-nycGDea-y1oJVGdpCZRW4VB3MfBBdvDL9CHC" target="_blank" rel="external">Writing</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://fifteentomay.github.io/notes/2017/06/19/hello-world/" data-id="cj45nd8w70002x0oo7k3movui" class="article-share-link">Share</a>
+      <a data-url="https://fifteentomay.github.io/notes/2017/06/20/关闭局域网时间自动同步/" data-id="cj45nd8vc0001x0oo61rz6i7k" class="article-share-link">Share</a>
       
       
     </footer>
@@ -107,15 +100,20 @@
     
 <nav id="article-nav">
   
-    <a href="/2017/06/19/建github技术博客时遇到的报错/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/06/20/svn-避免跟踪指定目录/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          建github技术博客时遇到的报错
+          svn 避免跟踪指定目录
         
       </div>
     </a>
   
+  
+    <a href="/2017/06/19/建github技术博客时遇到的报错/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">建github技术博客时遇到的报错</div>
+    </a>
   
 </nav>
 

@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>建github技术博客时遇到的报错 | 陋巷拾人</title>
+  <title>svn 避免跟踪指定目录 | 陋巷拾人</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="ERROR Deployer not found: git12$ 在blog目录下打开git bash, 执行npm install hexo-deployer-git --save(这是我搭建过程中漏掉的一步), 这里的blog目录是在执行hexo init blog时生成的, 如果你选错其他的目录了会提示另一个错: npm ERR! addLocal Could not install;$ 还">
+  <meta name="description" content="避免跟踪指定目录12$ svn update --set-depth=exclude dir1 dir2 dir3$ 这里的dir1/dir2/dir3是不期望跟踪的子目录名称 恢复跟踪指定目录12$ svn update --set-depth=infinity dir3$ 这里的dir3是期望恢复跟踪的子目录名称">
 <meta property="og:type" content="article">
-<meta property="og:title" content="建github技术博客时遇到的报错">
-<meta property="og:url" content="https://fifteentomay.github.io/notes/2017/06/19/建github技术博客时遇到的报错/index.html">
+<meta property="og:title" content="svn 避免跟踪指定目录">
+<meta property="og:url" content="https://fifteentomay.github.io/notes/2017/06/20/svn-避免跟踪指定目录/index.html">
 <meta property="og:site_name" content="陋巷拾人">
-<meta property="og:description" content="ERROR Deployer not found: git12$ 在blog目录下打开git bash, 执行npm install hexo-deployer-git --save(这是我搭建过程中漏掉的一步), 这里的blog目录是在执行hexo init blog时生成的, 如果你选错其他的目录了会提示另一个错: npm ERR! addLocal Could not install;$ 还">
-<meta property="og:updated_time" content="2017-06-19T16:16:32.522Z">
+<meta property="og:description" content="避免跟踪指定目录12$ svn update --set-depth=exclude dir1 dir2 dir3$ 这里的dir1/dir2/dir3是不期望跟踪的子目录名称 恢复跟踪指定目录12$ svn update --set-depth=infinity dir3$ 这里的dir3是期望恢复跟踪的子目录名称">
+<meta property="og:updated_time" content="2017-06-20T14:07:22.875Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="建github技术博客时遇到的报错">
-<meta name="twitter:description" content="ERROR Deployer not found: git12$ 在blog目录下打开git bash, 执行npm install hexo-deployer-git --save(这是我搭建过程中漏掉的一步), 这里的blog目录是在执行hexo init blog时生成的, 如果你选错其他的目录了会提示另一个错: npm ERR! addLocal Could not install;$ 还">
+<meta name="twitter:title" content="svn 避免跟踪指定目录">
+<meta name="twitter:description" content="避免跟踪指定目录12$ svn update --set-depth=exclude dir1 dir2 dir3$ 这里的dir1/dir2/dir3是不期望跟踪的子目录名称 恢复跟踪指定目录12$ svn update --set-depth=infinity dir3$ 这里的dir3是期望恢复跟踪的子目录名称">
   
     <link rel="alternate" href="/atom.xml" title="陋巷拾人" type="application/atom+xml">
   
@@ -63,10 +63,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-建github技术博客时遇到的报错" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-svn-避免跟踪指定目录" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2017/06/19/建github技术博客时遇到的报错/" class="article-date">
-  <time datetime="2017-06-19T15:59:35.000Z" itemprop="datePublished">2017-06-19</time>
+    <a href="/2017/06/20/svn-避免跟踪指定目录/" class="article-date">
+  <time datetime="2017-06-20T04:22:13.000Z" itemprop="datePublished">2017-06-20</time>
 </a>
     
   </div>
@@ -77,7 +77,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      建github技术博客时遇到的报错
+      svn 避免跟踪指定目录
     </h1>
   
 
@@ -85,13 +85,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="ERROR-Deployer-not-found-git"><a href="#ERROR-Deployer-not-found-git" class="headerlink" title="ERROR Deployer not found: git"></a>ERROR Deployer not found: git</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ 在blog目录下打开git bash, 执行npm install hexo-deployer-git --save(这是我搭建过程中漏掉的一步), 这里的blog目录是在执行hexo init blog时生成的, 如果你选错其他的目录了会提示另一个错: npm ERR! addLocal Could not install;</div><div class="line">$ 还有另外一种情况也会报这个错，hexo3.0后需要在 _config.yml 中设置 deploy中的<span class="built_in">type</span>为git（过去是github）</div></pre></td></tr></table></figure>
-<p>More info: <a href="http://www.jianshu.com/p/701b1095da11" target="_blank" rel="external">搭建方法参照</a></p>
+        <h3 id="避免跟踪指定目录"><a href="#避免跟踪指定目录" class="headerlink" title="避免跟踪指定目录"></a>避免跟踪指定目录</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ svn update --<span class="built_in">set</span>-depth=exclude dir1 dir2 dir3</div><div class="line">$ 这里的dir1/dir2/dir3是不期望跟踪的子目录名称</div></pre></td></tr></table></figure>
+<h3 id="恢复跟踪指定目录"><a href="#恢复跟踪指定目录" class="headerlink" title="恢复跟踪指定目录"></a>恢复跟踪指定目录</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ svn update --<span class="built_in">set</span>-depth=infinity dir3</div><div class="line">$ 这里的dir3是期望恢复跟踪的子目录名称</div></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://fifteentomay.github.io/notes/2017/06/19/建github技术博客时遇到的报错/" data-id="cj45nd8wm0003x0oor44eztxj" class="article-share-link">Share</a>
+      <a data-url="https://fifteentomay.github.io/notes/2017/06/20/svn-避免跟踪指定目录/" data-id="cj45nd8vc0000x0oou6sjwxz2" class="article-share-link">Share</a>
       
       
     </footer>
@@ -100,19 +100,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2017/06/20/关闭局域网时间自动同步/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          关闭局域网时间自动同步
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/06/19/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2017/06/20/关闭局域网时间自动同步/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
+      <div class="article-nav-title">关闭局域网时间自动同步</div>
     </a>
   
 </nav>

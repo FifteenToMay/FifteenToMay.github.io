@@ -61,6 +61,82 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-svn-避免跟踪指定目录" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/06/20/svn-避免跟踪指定目录/" class="article-date">
+  <time datetime="2017-06-20T04:22:13.000Z" itemprop="datePublished">2017-06-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/06/20/svn-避免跟踪指定目录/">svn 避免跟踪指定目录</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="避免跟踪指定目录"><a href="#避免跟踪指定目录" class="headerlink" title="避免跟踪指定目录"></a>避免跟踪指定目录</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ svn update --<span class="built_in">set</span>-depth=exclude dir1 dir2 dir3</div><div class="line">$ 这里的dir1/dir2/dir3是不期望跟踪的子目录名称</div></pre></td></tr></table></figure>
+<h3 id="恢复跟踪指定目录"><a href="#恢复跟踪指定目录" class="headerlink" title="恢复跟踪指定目录"></a>恢复跟踪指定目录</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ svn update --<span class="built_in">set</span>-depth=infinity dir3</div><div class="line">$ 这里的dir3是期望恢复跟踪的子目录名称</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://fifteentomay.github.io/notes/2017/06/20/svn-避免跟踪指定目录/" data-id="cj45nd8vc0000x0oou6sjwxz2" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-关闭局域网时间自动同步" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/06/20/关闭局域网时间自动同步/" class="article-date">
+  <time datetime="2017-06-20T02:58:40.000Z" itemprop="datePublished">2017-06-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/06/20/关闭局域网时间自动同步/">关闭局域网时间自动同步</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="公司局域网怎么关闭系统自动更新时间-停用ntpclient服务"><a href="#公司局域网怎么关闭系统自动更新时间-停用ntpclient服务" class="headerlink" title="公司局域网怎么关闭系统自动更新时间(停用ntpclient服务)"></a>公司局域网怎么关闭系统自动更新时间(停用ntpclient服务)</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ Ntpclient是时间服务提供程序。</div><div class="line">$ 解决: 停掉ntpclient服务HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpClient</div><div class="line">$ 把Enabled的值改成0 ,然后再net stop w32time &amp;&amp; net start w32time</div></pre></td></tr></table></figure>
+<p>More info: <a href="http://baike.baidu.com/link?url=-KLGel6HWHFOtzhvc3ifljbrYcVxU43RbKqPWp4z64DcqQ52aQ3eBL2ZlCNv3H-FEgzgwg-nycGDea-y1oJVGdpCZRW4VB3MfBBdvDL9CHC" target="_blank" rel="external">Writing</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://fifteentomay.github.io/notes/2017/06/20/关闭局域网时间自动同步/" data-id="cj45nd8vc0001x0oo61rz6i7k" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-建github技术博客时遇到的报错" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/06/19/建github技术博客时遇到的报错/" class="article-date">
@@ -89,7 +165,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://fifteentomay.github.io/notes/2017/06/19/建github技术博客时遇到的报错/" data-id="cj44ch4mk0001a0oo9rlwgddw" class="article-share-link">Share</a>
+      <a data-url="https://fifteentomay.github.io/notes/2017/06/19/建github技术博客时遇到的报错/" data-id="cj45nd8wm0003x0oor44eztxj" class="article-share-link">Share</a>
       
       
     </footer>
@@ -134,7 +210,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://fifteentomay.github.io/notes/2017/06/19/hello-world/" data-id="cj44ch4ma0000a0oon46wopnp" class="article-share-link">Share</a>
+      <a data-url="https://fifteentomay.github.io/notes/2017/06/19/hello-world/" data-id="cj45nd8w70002x0oo7k3movui" class="article-share-link">Share</a>
       
       
     </footer>
@@ -172,6 +248,14 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/06/20/svn-避免跟踪指定目录/">svn 避免跟踪指定目录</a>
+          </li>
+        
+          <li>
+            <a href="/2017/06/20/关闭局域网时间自动同步/">关闭局域网时间自动同步</a>
+          </li>
         
           <li>
             <a href="/2017/06/19/建github技术博客时遇到的报错/">建github技术博客时遇到的报错</a>
